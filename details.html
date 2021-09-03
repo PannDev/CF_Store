@@ -68,6 +68,72 @@
         h2 {
             font-size: 35px;
         }
+
+        /* Pesan Sekarang ! */
+
+        .pesan-sekarang {
+            max-width: 400px;
+        }
+
+        .pesan-sekarang h4 {
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .box_masukan_jumlah {
+            border-top: #d3d3d3 solid 1px;
+            border-bottom: #d3d3d3 solid 1px;
+            margin-bottom: 22px;
+        }
+
+        .form_jumlah {
+            margin-bottom: 22px;
+        }
+
+        .form_jumlah label {
+            font-size: 18px;
+        }
+
+        .form_jumlah input {
+            height: 40px;
+            font-size: 15px;
+            padding: 10px;
+            margin-left: 15px;
+            width: 100px;
+        }
+
+        .total_harga {
+            border-bottom: #d3d3d3 solid 1px;
+        }
+
+        #total_harga {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 22px;
+        }
+
+        .btn_details {
+            border: black solid 2px;
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 170px;
+            height: 60px;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        .btn_details:hover {
+            background: #abe06d;
+            color: #fff;
+            border-color: #abe06d;
+            transition: 0.4s;
+        }
+
+        .btn_details a {
+            width: 100%;
+        }
     </style>
 
     <!-- CF Store, Menyediakan Segala kebutuhan komputer anda! -->
@@ -113,7 +179,7 @@
                     <!-- Content Kanan -->
                     <div class="col-md-6 bg-grey">
                         <div class="details-content">
-                            <h2>ProArt StudioBook Pro X W730</h2>
+                            <h2 id="nama_produk">ProArt StudioBook Pro X W730</h2>
                             <h4>IDR. 55.800.000</h4>
                             <!-- Deskripsi Barang -->
                             <p>
@@ -158,12 +224,39 @@
                                 </table>
                             </div>
                         </div>
+
                         <!-- Pesan Sekarang -->
                         <div class="pesan-sekarang">
                             <h4>Pesan Sekarang !</h4>
-                            <hr>
-                            <p>Masukan Jumlah Yang Ingin Di Pesan</p>
+
+                            <form>
+                                <div class="box_masukan_jumlah">
+                                    <p>Masukan Jumlah Yang Ingin Di Pesan</p>
+                                    <div class="form_jumlah">
+                                        <label for=""><b>Jumlah</b></label>
+                                        <input type="number" id="number" value="1" min="1">
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div class="total_harga">
+                                <p>Perkiraan total harga yang dibayarkan</p>
+                                <div id="total_harga" data-harga="10000000">IDR. 10000000 </div>
+                            </div>
+
+                            <div class="box_pesan_wa">
+                                <a href="" onclick="wa()">
+                                    <div class="btn_details btn-outline-details">
+                                        <i class="fab fa-whatsapp" style="margin-right: 5px;" aria-hidden="true"></i>
+                                        PESAN
+                                    </div>
+                                </a>
+                                <p style="font-size: 12px;margin-top: 15px;">*Semua proses pemesanan akan proses melalui
+                                    WA</p>
+                            </div>
+
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -266,6 +359,24 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        var total = document.querySelector('#total_harga');
+        var jumlah = document.querySelector('#number');
+        var nama_produk = document.querySelector('#nama_produk').innerHTML;
+        jumlah.addEventListener('change', function () {
+            var jumlah_harga = total.getAttribute('data-harga');
+
+            if (this.value > 0) {
+                total.innerHTML = 'IDR. ' + (parseInt(jumlah_harga) * parseInt(this.value));
+            }
+        })
+
+        function wa() {
+            window.open("https://wa.me/628813007214?text=Halo%20saya%20ingin%20bertanya%20tentang%20" + nama_produk + '%20Jumlah:%20' + jumlah.value + ' total harga ' +  total.innerHTML);
+        }
+
+    </script>
 
 </body>
 
