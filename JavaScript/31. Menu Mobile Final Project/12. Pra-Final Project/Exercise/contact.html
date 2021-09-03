@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pra Final Project</title>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/807d51979a.js" crossorigin="anonymous"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="reset.css"> <!-- Reset Css -->
+    <link rel="stylesheet" href="style.css"> <!-- Style Css -->
+    <link rel="stylesheet" href="Aset/Source/flexboxgrid.css"> <!-- Flexbox Grid Css -->
+    <link rel="stylesheet" href="responsive.css"> <!-- Responsive -->
+</head>
+
+<body class="">
+    <style>
+        main {
+            text-align: center;
+        }
+    </style>
+    <!-- CF Store, Menyediakan Segala kebutuhan komputer anda! -->
+    <div class="message_alert">
+        <span>CF Store, Menyediakan Segala kebutuhan komputer anda!</span>
+    </div>
+
+    <header>
+        <div class="container">
+            <!-- Nav Row -->
+            <nav class="row between-sm relative menu_navigasi">
+                <!-- Logo Cf Store -->
+                <div class="nav-left col-sm-4 col-xs-12">
+                    <a href=""><img src="Aset/Assets/logo/logo-dark.png" alt=""></a>
+                </div>
+                <!-- Home Shop Contact About -->
+                <div class="nav-center col-sm-4 col-xs-12">
+                    <ul class="list-style-none">
+                        <li><a href="index.html"> Home </a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="contact.html"><b>Contact</b></a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <!-- Logo IG -->
+                <div class="nav-right col-sm-4 col-xs-12">
+                    <img src="Aset/Assets/icon/instagram2.png" alt="">
+                </div>
+
+                <!-- hanya akan aktif di ukuran 768px -->
+                <div class="burger_menu">
+                    <div class="burger_wrapper">
+                        <div class="burger_items"></div>
+                        <div class="burger_items"></div>
+                        <div class="burger_items"></div>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>CONTACT US</h1>
+        <p> <b>Contact Center</b> </p>
+        Call Center : +62 22 11223344
+        <br>
+        CS Whatsapp : +62 811 223 344
+        <p> <b>CF Store</b> </p>
+        Mail : yul@codefirst.co.id
+        <!-- Alamat -->
+        <p>
+            <b>
+                Sederetan Ruko English First / EF, Ruko Prima, Jl. Sisingamangaraja No.58, Panjunan, Lemahwungkuk,
+                Cirebon City, West Java 45112
+            </b>
+        </p>
+        <p> <b>see on maps</b> </p>
+        <!-- Jam Buka -->
+        <p>
+            Jam Buka <br>
+            Senin sampai jumat 10.00–18.00 <br>
+            Sabtu 00.00–16.00 <br>
+            Minggu Tutup <br>
+        </p>
+        <p> <b>Social Media</b> </p>
+        <ul class="contact_social-media list-style-none">
+            <li>
+                <a href="https://instagram.com/codefirst" class=""><i class="fab fa-instagram-square"
+                        aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="https://facebook.com/" class=""><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="https://youtube.com" class=""><i class="fab fa-youtube" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="https://tiktok.com" class=""><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </main>
+
+</body>
+
+    <!-- J script -->
+    <script>
+        let menu = document.querySelector('.burger_menu').addEventListener('click', setMenu);
+        // menu.addEventListener('click',setMenu);
+
+        function setMenu() {
+            let setBody = document.querySelector('body');
+            setBody.classList.toggle('menu_active');
+        }
+    </script>
+
+</html>

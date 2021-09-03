@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+</head>
+
+<body>
+    <h2>Pengulangan For</h2>
+    <pre>
+        saya memiliki data object sebagai berikut
+        let students = [{
+            name: 'yulyanto',
+            gender: 'laki-laki'
+        }, {
+            name: 'Jesica',
+            gender: 'perempuan'
+        }, {
+            name: 'Natasha',
+            gender: 'perempuan'
+        }, {
+            name: 'Kurnia',
+            gender: 'laki-laki'
+        }, {
+            name: 'Smith',
+            gender: 'laki-laki'
+        }, {
+            name: 'Adam',
+            gender: 'laki-laki'
+        }, {
+            name: 'Alfred',
+            gender: 'laki-laki'
+        }, {
+            name: 'Ratna',
+            gender: 'perempuan'
+        }, {
+            name: 'Queen',
+            gender: 'perempuan'
+        }, {
+            name: 'Luffy',
+            gender: 'laki-laki'
+        }, ];
+    </pre>
+    <br>
+    <br>
+    <h2>Hasil output Students yang berjernis kelamin perempuan :</h2>
+
+
+    <script>
+        // let siswa = { name: 'yulyanto', gender: ' laki', name: 'kurnia', gender: ' laki', name: 'smith', gender: ' laki', name: 'adam', gender: ' laki', name: 'Alfred', gender: ' laki', name: 'Luffy', gender: ' laki', name: 'jesica', gender: ' cewe', name: 'natasha', gender: ' cewe', name: 'ratna', gender: ' cewe', name: 'Queen', gender: ' cewe', };
+
+        let siswa = [
+            {
+                name: 'yulyanto',
+                gender: 'laki'
+            },
+            {
+                name: 'kurnia',
+                gender: 'laki'
+            },
+            {
+                name: 'smith',
+                gender: 'laki'
+            },
+            {
+                name: 'adam',
+                gender: 'laki'
+            },
+            {
+                name: 'alfred',
+                gender: 'laki'
+            },
+            {
+                name: 'luffy',
+                gender: 'laki'
+            },
+            {
+                name: 'jesica',
+                gender: 'cewe'
+            },
+            {
+                name: 'natasha',
+                gender: 'cewe'
+            },
+            {
+                name: 'ratna',
+                gender: 'cewe'
+            },
+            {
+                name: 'queen',
+                gender: 'cewe'
+            },
+        ]
+
+
+
+        for (const key in siswa) {
+            if (Object.hasOwnProperty.call(siswa, key)) {
+                const element = siswa[key];
+                if (element.gender == 'cewe') {
+                    document.write('<br>');
+                    document.write(element.name);
+                }
+
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perulangan FOR</title>
+</head>
+<h2>List NBA TEAM</h2>
+
+<body>
+    <script>
+        /**
+         *   forEach(). termasuk kedalam counter loop atau sudah ditentukan
+         * atau sudah jelas jumlah perulangan yang terjadi 
+         * forEach sama seperti for in digunakan untuk loop array 
+         */
+        var data = [];
+
+        // kita punya data team NBA
+        var nbaTeam = ["LA Lakers", "LA Clipers", "Golden State Warrios", "OKC", "Miami Heat", "Celtic", "Broklin Nets"];
+
+        //Kita bisa mencetak dengan forEach 
+        nbaTeam.forEach(function(nbaTeam) {
+            document.write("<p>" + nbaTeam + "</p>");
+        });
+    </script>
+</body>
+
+</html>

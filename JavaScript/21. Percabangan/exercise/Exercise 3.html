@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+</head>
+
+<body>
+    <pre>
+        Exercise kali ini kita akan menampilkan hari hari berdasarkan 
+        inputan nilai dari 1-7
+
+        Gunakan Swicth case untuk implementasi
+        
+        1: Senin
+        2: Selasa
+        3: Rabu
+        4: Kamis
+        5: Jumat
+        6: Sabtu
+        7: Minggu
+
+        Kasusnya adalah jika kita input dengan promp 
+        angka satu maka tampilkan alert "Hari Senin"
+
+        jika diluar angka 1-7 masukan pesan "Data yang dimasukan tidak sesuai"
+    </pre>
+
+    <script>
+        var inputan
+        var Senin
+
+        var inputan = prompt("Silakan Masukan Hari :");
+        //bisa lanjutakan dibawah
+        // ingat gunakan swicth case
+
+        switch (inputan) {
+            case '1':
+                alert("Hari Senin");
+                break;
+            case '2':
+                alert("Hari Selasa");
+                break;
+            case '3':
+                alert("Hari Rabu");
+                break;
+            case '4':
+                alert("Hari Kamis");
+                break;
+            case '5':
+                alert("Hari Jumat");
+                break;
+            case '6':
+                alert("Hari Sabtu");
+                break;
+            case '7':
+                alert("Hari Minggu");
+                break;
+        
+            default:
+            alert('Data Yang Dimasukan Tidak Sesuai')         
+                break;
+        }
+    </script>
+</body>
+
+</html>

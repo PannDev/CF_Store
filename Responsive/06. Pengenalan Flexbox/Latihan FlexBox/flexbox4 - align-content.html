@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Container // Flexbox-Align-Content</title>
+    <link rel="stylesheet" href="flexbox.css">
+    <style>
+        /* //START css berbeda dengan yang di file flexbox */
+        
+        .container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            /* background: #fff; */
+            border: 1px solid;
+            padding: 15px;
+            margin: 15px auto;
+        }
+        
+        .row {
+            flex-wrap: wrap;
+            height: 400px;
+        }
+        
+        .col {
+            height: unset;
+            background-color: #f1f1f1;
+            /* width: 100px; */
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+        /* //END css berbeda dengan yang di file flexbox */
+        /* class justify content */
+        
+        .align-content-start {
+            align-content: flex-start;
+        }
+        
+        .align-content-end {
+            align-content: flex-end;
+        }
+        
+        .align-content-center {
+            align-content: center;
+        }
+        
+        .align-content-stretch {
+            align-content: stretch;
+        }
+        
+        .align-content-between {
+            align-content: space-between;
+        }
+        
+        .align-content-around {
+            align-content: space-around;
+        }
+        
+        .col-3 {
+            width: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="row">
+                <a href="flexbox1 - flex-wrap.html"> flex wrap</a>
+                <a href="flexbox2 - flex-direction.html"> flex-direction</a>
+                <a href="flexbox3 - justify-content.html"> justify-content</a>
+                <a href="flexbox4 - align-content.html"> align-content</a>
+                <a href="flexbox5 - align-items.html"> align-items</a>
+                <a href="flexbox6 - flex-flow.html"> flex-flow</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Contoh Flex dengan align-content </h2>
+
+        <!-- //row jadi flex-container -->
+        <h2>contoh flex-start</h2>
+        <div class="row align-content-start">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+            <div class="col">6</div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- //row jadi flex-container -->
+        <h2>contoh flex-end</h2>
+        <div class="row align-content-end">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+            <div class="col">6</div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- //row jadi flex-container -->
+        <h2>contoh flex center</h2>
+        <div class="row align-content-center">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+            <div class="col">6</div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- //row jadi flex-container -->
+        <h2>contoh flex space-between</h2>
+        <div class="row align-content-between">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+            <div class="col">6</div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- //row jadi flex-container -->
+        <h2>contoh flex space-around</h2>
+        <div class="row align-content-around">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+            <div class="col">6</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Contoh lain</h2>
+        <div class="row align-content-center">
+            <div class="col col-3">
+                kiri
+            </div>
+            <div class="col col-3">
+                tengah
+            </div>
+            <div class="col col-3">
+                kanan
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

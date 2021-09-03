@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 
+
+        Tipe data :
+        String = untuk menampilkan tulisan didalam tanda kutip
+        Number = untuk menampilkan angka
+        Boolean = untuk menampilkan true atau false
+        Null = tidak memiliki nilai apapun
+        Object = tipe data bukan primitif, seperti array
+
+     -->
+
+    <script>
+        //     \n = untuk enter (<br/> di html)
+        var a = 'lorem ipsum \n dolor';
+        console.log(a);
+
+        // Number Decimal
+        var d = "3.14";
+        var desimal = 999.99999999999999;
+        console.log(desimal);
+
+        // Cek NaN atau tidak
+        var cnan_false = isNaN(3.14); //false 
+        console.log(cnan_false);
+
+        var cnan_true = isNaN("99912.34567891234a"); // true NaN
+        console.log(cnan_true);
+
+        //////////////////////////////////////////////////////////
+
+        // Object || Memodelkan Object
+        // { key1: value, key2: value, key3: value, ..... }
+
+        //  Mobil 
+        //  Warna : Hitam 
+        //  Roda : 4
+        //  Jumlah Kursi : 4
+        //  Harga : 300jt
+        //  Model : TY002
+        //  Merk : Toyota
+
+        // contoh object
+        var mobil = {
+            Warna: 'Hitam',
+            Roda: '4',
+            Jumlahkursi: 4,
+            Harga: '300jt',
+            Model: 'TY002',
+            Merk: 'Toyota',
+        }
+
+        console.log(mobil);
+
+        // bentuknya object
+        console.log(Object.keys(mobil));
+
+        // haanya akan keys aja
+        console.log('----');
+
+        // hanya akan warna saja
+        console.log(mobil.Warna);
+        //error undefined??
+        console.log(mobil.warna);
+
+
+
+    </script>
+
+</body>
+
+</html>

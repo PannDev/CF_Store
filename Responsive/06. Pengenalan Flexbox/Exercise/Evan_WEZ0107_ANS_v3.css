@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* //nav */
+
+header {
+    background: #00bcd4;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+nav .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: unset !important;
+}
+
+header .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none !important;
+    padding: 15px;
+    margin-top: unset;
+    margin-bottom: unset;
+}
+
+nav a {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.lapangan {
+    width: 25vw;
+    height: 70vh;
+    background-image: url(./line-field.png);
+    background-color: green;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.pemain {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.penyerang, .sayap, .gelandang, .bertahan, .kiper {
+    display: flex;
+}
+.penyerang {
+    justify-content: center;
+}
+
+.sayap {
+    justify-content: space-evenly;
+}
+
+.gelandang {
+    justify-content: space-evenly;
+}
+
+.bertahan {
+    justify-content: space-evenly;
+}
+
+.kiper {
+    justify-content: center;
+}

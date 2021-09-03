@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Container</title>
+    <link rel="stylesheet" href="flexbox.css">
+    <style>
+        .col {
+            width: unset;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="row">
+                <a href="flexbox1 - order.html"> flex Order</a>
+                <a href="flexbox2 - flex-grow.html"> flex-grow</a>
+                <a href="flexbox3 - flex-shrink.html"> flex-shrink</a>
+                <a href="flexbox4 - flex-basis.html"> flex-basis</a>
+                <a href="flexbox5 - flex.html" style="font-weight: bold;"> flex</a>
+                <a href="flexbox6 - align-self.html"> align-self</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Contoh Flex dengan flex : flex-grow flex-shrink flex-basis</h2>
+        <p>
+            cara penulisan flex : flex-grow flex-shrink flex-basis <br> contoh : flex: 0 0 25%; //grow = 0, shrink = 0, basis = 25% <br>
+
+        </p>
+        <h2>Bagian yang ini di tanpa flex-wrap</h2>
+
+        <!-- //row jadi flex-container -->
+        <div class="row align-items-start">
+            <div class="col" style="flex:0 0 25%">1 flex(0 0 25%)</div>
+            <div class="col" style="flex:0 0 25%">2</div>
+            <div class="col" style="flex:0 0 25%">3</div>
+            <div class="col" style="flex:0 0 25%">4</div>
+            <div class="col" style="flex:0 0 25%">5</div>
+            <div class="col" style="flex:0 0 25%">6</div>
+        </div>
+        <h2>Bagian yang ini di tambah flex-wrap</h2>
+        <div class="row align-items-start flex-wrap">
+            <div class="col" style="flex:1 0 25%">1 flex(1 0 25%)</div>
+            <div class="col" style="flex:1 0 25%">2</div>
+            <div class="col" style="flex:1 0 25%">3</div>
+            <div class="col" style="flex:1 0 25%">4</div>
+            <div class="col" style="flex:1 0 25%">5</div>
+            <div class="col" style="flex:1 0 25%">6</div>
+        </div>
+
+        <h2>Bagian yang ini di tanpa flex-wrap tapi menggunakan flex-shrink</h2>
+        <div class="row align-items-start ">
+            <div class="col" style="flex:1 1 25%">1 flex(1 1 25%)</div>
+            <div class="col" style="flex:1 1 25%">2</div>
+            <div class="col" style="flex:1 1 25%">3</div>
+            <div class="col" style="flex:1 1 25%">4</div>
+            <div class="col" style="flex:1 1 25%">5</div>
+            <div class="col" style="flex:1 1 25%">6</div>
+        </div>
+
+        <h2>Bagian yang ini di tanpa flex-wrap tapi menggunakan flex-shrink</h2>
+        <div class="row align-items-start ">
+            <div class="col" style="flex:1 1 25%">1 flex(1 1 25%)</div>
+            <div class="col" style="flex:1 1 25%">2</div>
+            <div class="col" style="flex:1 1 25%">3</div>
+            <div class="col" style="flex:1 1 25%">4</div>
+            <div class="col" style="flex:1 1 25%">5</div>
+            <div class="col" style="flex:1 1 25%">6</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

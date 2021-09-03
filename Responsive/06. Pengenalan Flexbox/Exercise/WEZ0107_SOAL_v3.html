@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Formasi Bola</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* //nav */
+        
+        header {
+            background: #00bcd4;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        
+        nav .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: unset !important;
+        }
+        
+        header .container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            border: none !important;
+            padding: 15px;
+            margin-top: unset;
+            margin-bottom: unset;
+        }
+        
+        nav a {
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .lapangan {
+            width: 25vw;
+            height: 70vh;
+            background-image: url(./line-field.png);
+            background-color: green;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        
+        .pemain {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        /* 
+      .penyerang{
+        display: flex;
+        justify-content: center;
+      }
+
+      .sayap{
+        display: flex;
+        justify-content: space-evenly;
+      }
+      
+      .gelandang{
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .bertahan{
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .kiper{
+        display: flex;
+        justify-content: center;
+      } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="row">
+                <a href="1.html"> Exercise 1</a>
+                <a href="2.html"> Exercise 2</a>
+                <a href="3.html"> Exercise 3</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Formasi Cemara</h1>
+        <div class="lapangan">
+            <div class="penyerang">
+                <div class="pemain"></div>
+            </div>
+            <div class="sayap">
+                <div class="pemain"></div>
+                <div class="pemain"></div>
+            </div>
+            <div class="gelandang">
+                <div class="pemain"></div>
+                <div class="pemain"></div>
+                <div class="pemain"></div>
+            </div>
+            <div class="bertahan">
+                <div class="pemain"></div>
+                <div class="pemain"></div>
+                <div class="pemain"></div>
+                <div class="pemain"></div>
+            </div>
+            <div class="kiper">
+                <div class="pemain"></div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

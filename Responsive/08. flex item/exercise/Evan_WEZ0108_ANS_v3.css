@@ -1,0 +1,85 @@
+/* Css Reset */
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Css Style */
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.CF {
+    background-color: rgb(245, 171, 235);
+    color: white;
+    padding: 15px;
+}
+
+.content {
+    margin-top: 30px;
+}
+
+/* Flex Style */
+
+.flex-shrink .col:nth-child(3) {
+    flex-shrink: 3;
+}
+
+.flex-grow .col:nth-child(1) {
+    flex-grow: 1;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    padding: 30px;
+    text-align: center;
+    background-color: rgb(255, 197, 111);
+    height: 250px;
+    width: 100%;
+    margin-right: 15px;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+.flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-column-reverse {
+    flex-direction: column-reverse;
+}

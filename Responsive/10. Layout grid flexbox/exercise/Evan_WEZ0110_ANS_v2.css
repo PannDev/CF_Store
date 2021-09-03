@@ -1,0 +1,254 @@
+/* Css Reset */
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Css Style */
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-grey {
+    background: rgb(253, 253, 253);
+}
+
+/* Style Button-Primary */
+
+.button-primary {
+    padding: 15px 40px;
+    border-radius: 30px;
+}
+
+h1 {
+    font-family: 'Dela Gothic One', cursive;
+}
+
+.banner-left p, h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+a, body p {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.line-height-25 {
+    line-height: 25px;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    background-color: palevioletred;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: white;
+    margin-right: 30px;
+}
+
+header h1 {
+    font-size: 18px;
+}
+
+header .imgh1 {
+    display: flex;
+    align-items: center;
+}
+
+/* Banner */
+
+.banner-content {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* FIND YOUR */
+
+.banner-left p:nth-child(1) {
+    font-weight: bold;
+    font-size: 20px;
+    color: palevioletred;
+    margin-bottom: 5px;
+}
+
+/* AWESOME PETS */
+
+.banner-left p:nth-child(2) {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+/* we have something in common... */
+
+.banner-left p:nth-child(3) {
+    margin-top: 15px;
+    font-size: 20px;
+    max-width: 430px;
+}
+
+.banner-left nav {
+    margin-top: 40px;
+}
+
+/* PET QUIZ */
+
+.banner-left a {
+    color: white;
+    font-weight: bold;
+    background: palevioletred;
+    padding: 15px 40px;
+    border-radius: 30px;
+}
+
+/* Featured */
+
+.featured {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-evenly;
+}
+
+.featured1, .featured2 {
+    padding: 30px;
+    border-radius: 30px;
+    height: 300px
+}
+
+.featured1 nav, .featured2 nav {
+    margin-top: 40px;
+}
+
+.featured1 {
+    background: palevioletred;
+    color: white;
+}
+
+.featured1 nav a {
+    /* font-weight: bold; */
+    background: white;
+    color: palevioletred;
+}
+
+.featured2 {
+    border: 1px solid rgb(211, 211, 211);
+}
+
+.featured2 nav a {
+    background: palevioletred;
+    color: white;
+}
+
+/* Content1 */
+
+.content1 {
+    padding: 30px;
+    background: #f8ebd3;
+    height: 350px;
+    border-radius: 30px;
+    margin-top: 100px;
+    display: flex;
+}
+
+.content1-img {
+    margin-left: -30px;
+}
+
+.content1-right {
+    display: flex;
+    padding-left: 100px;
+    align-items: center;
+}
+
+.content1-right p {
+    line-height: 30px;
+}
+
+.content1-right .h2-p {
+    max-width: 700px;
+}
+
+.content1-right nav a {
+    background: black;
+    color: white;
+}
+
+.content1-right nav {
+    margin-top: 40px;
+}
+
+/* Content 2 */
+
+.content2-right {
+    display: flex;
+    padding-left: 30px;
+    padding-right: 100px;
+    align-items: center;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 100px;
+    padding: 30px;
+    background: rgb(252, 244, 231);
+}
+
+.footer-content {
+    /* font-weight: bold; */
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:320px) {
+    .container {
+        max-width: 320px;
+    }
+    header h1 {
+        width: 100%;
+    }
+    header nav {
+        display: none;
+    }
+    .banner-left {
+        width: 100%;
+        padding-left: 15px;
+    }
+    .banner-content {
+        flex-direction: column;
+    }
+    .banner-left {
+        margin-top: 50px;
+    }
+    .banner-img img {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        width: 300px;
+    }
+}

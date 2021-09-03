@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Menu</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        .d_flex {
+            display: flex;
+        }
+
+        header {
+            background-color: rgb(44, 44, 58);
+            padding: 10px 30px;
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            /* padding: 15px; */
+        }
+
+        a:active,
+        a:focus {
+            color: white;
+        }
+
+        .burger_menu {
+            display: none;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+
+        .burger_items {
+            width: 100%;
+            height: 2px;
+            margin-top: 5px;
+            background-color: rgb(255, 0, 0);
+            transition: 0.6s;
+        }
+
+        .menu_mobile {
+            justify-content: space-between;
+            align-items: center;
+            font-size: 18px;
+        }
+
+        .menu_active .burger_menu .burger_items:nth-child(1) {
+            transform: rotate(45deg);
+            margin-top: 10px;
+        }
+
+        .menu_active .burger_menu .burger_items:nth-child(2) {
+            display: none;
+        }
+
+        .menu_active .burger_menu .burger_items:nth-child(3) {
+            transform: rotate(-45deg);
+            margin-top: -3px;
+        }
+
+
+        /* Versi Mobile */
+        @media (max-width:768px) {
+            .burger_menu {
+                display: block;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .menu_active nav {
+                margin-top: 10px;
+                display: block;
+            }
+
+            .menu_active .menu_mobile {
+                display: block;
+            }
+
+            nav a {
+                display: block;
+                margin: 7px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body class="menu_active">
+
+    <header class="">
+
+        <div class="d_flex menu_mobile">
+            <div class="logo">Codefirst Indonesia</div>
+            <!-- Hanya akan muncul di tampilan desktop -->
+            <nav>
+                <a href="#">menu 1</a>
+                <a href="#">menu 2</a>
+                <a href="#">menu 3</a>
+                <a href="#">menu 4</a>
+            </nav>
+        </div>
+
+        <!-- hanya akan aktif di ukuran 768px -->
+        <div class="burger_menu">
+            <div class="burger_wrapper">
+                <div class="burger_items"></div>
+                <div class="burger_items"></div>
+                <div class="burger_items"></div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Jscript -->
+    <script>
+        let menu = document.querySelector('.burger_menu').addEventListener('click', setMenu);
+        // menu.addEventListener('click',setMenu);
+
+        function setMenu() {
+            let setBody = document.querySelector('body');
+            setBody.classList.toggle('menu_active');
+        }
+    </script>
+
+</body>
+
+</html>

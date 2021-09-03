@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Container</title>
+    <link rel="stylesheet" href="flexbox.css">
+
+    <style>
+        .flex-basis {
+            flex-wrap: wrap;
+        }
+
+        .flex-basis .col {
+            /* //kita unset atau kita hapus karna akan coba gunakan flex-basis */
+            width: unset;
+            flex-basis: calc(25% - 20px);
+        }
+
+        .flex-grow .col {
+            flex-grow: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="row">
+                <a href="flexbox1 - order.html"> flex Order</a>
+                <a href="flexbox2 - flex-grow.html"> flex-grow</a>
+                <a href="flexbox3 - flex-shrink.html"> flex-shrink</a>
+                <a href="flexbox4 - flex-basis.html" style="font-weight: bold;"> flex-basis</a>
+                <a href="flexbox5 - flex.html"> flex</a>
+                <a href="flexbox6 - align-self.html"> align-self</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Flex Basis</h2>
+        <p>
+            flex-basis akan mengatur ukuran awal dari item. Meskipun kita tidak mengatur width dari item, kita akan
+            mendapatkan ukuran 300px untuk setiap item. Karena saya menambahkan grow, maka item akan otomatis memenuhi
+            ruang yang kosong. Coba Anda resize, dan
+            perhatikan apa yang terjadi.
+        </p>
+        <div class="row flex-basis">
+            <div class="col" class="flex-basis:200px">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+            <div class="col">6</div>
+        </div>
+
+        <h2>Flex-Basis dengan flex-grow</h2>
+        <p>Saya coba gabungkan flex-basis dengan flex-grow agar memunuhi ruang yang kosong</p>
+        <div class="row flex-basis flex-grow">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+            <div class="col">6</div>
+        </div>
+        <br>
+        <br>
+        <h2>Flex-Basis dengan flex-grow flex-column</h2>
+        <p>Saya coba gabungkan flex-basis dengan flex-grow dan flex-column</p>
+        <div class="row flex-basis flex-grow flex-column">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+            <div class="col">6</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

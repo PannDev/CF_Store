@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox resposive (1)</title>
+    <style>
+        /* <!-- tampilan normal / desktop --> */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1200px
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            min-height: 200px;
+            flex: 0 0 calc(25% - 30px);
+            margin: 15px;
+            background-color: #bbb;
+        }
+
+        @media (max-width:560px) {
+            .row {
+                flex-direction: column;
+            }
+            .col {
+                flex: calc(100% - 30px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- //flexbox resposive   -->
+    <!-- flexbox sendiri membantu kita dalam membuat design/tampilan resposive -->
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+    </div>
+</body>
+
+</html>

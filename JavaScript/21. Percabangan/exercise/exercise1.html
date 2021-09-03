@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Percabangan 1</title>
+</head>
+
+<body>
+    <!-- buat skema kalkulator sederhana -->
+    <pre>
+        1) Gunakan Operator Aritmatika
+        2) Gunakan Inputan dengan prompt() inputan dibuat dengan 3kali, 
+        jadi saya memiliki 3 input variable yang mesti melakukan operatir Aritmatik
+        3) Masukan masing-masing prompt kedalam varibel BilA, BilB dan Operator
+        4) Gunakan Output Alert untuk hasil penjumlahan
+        5) Jadi berarti pertama kita akan munculkan dulu prom (inputan BilA)
+           kemudian munculkan inputan operator (bisa masukan semua operator aritmatik)
+           Masukan nilai kedua BILB. 
+           Terakhir munculkan hasilnya 
+        *------
+        
+        
+        Solutions : var BilA,BilB,Operator;
+        var hasil = eval(BilA+Operator+BilB);
+        
+        gunakan eval(nilai string) agar hasil outputnya tidak string// 
+        jadi setelah teman-teman deklarasi variable dan inisilisasi 3 variable itu
+        untuk outputnya bisa gunakan variabel Hasil yang seperti diatas, ditambah dengan function eval()
+    </pre>
+
+    <script>
+        var BilA;
+        var BilB;
+        var Operator;
+        var hasil;
+
+        BilA = prompt("Masukan Nilai BilA");
+        Operator = prompt("Operator");
+        BilB = prompt("Masukan Nilai BilB");
+        hasil =  alert(eval(BilA + Operator + BilB));
+    </script>
+
+</body>
+
+</html>

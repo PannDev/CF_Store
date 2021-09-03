@@ -1,0 +1,94 @@
+/* //jangan lupa menambahkan ini */
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    /* //ubah default dari chrome */
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* //header */
+
+header {
+    padding: 30px;
+    background-color: #ffffff;
+    font-size: 22px;
+    box-shadow: 0 0 20px 0px #d2d2d2;
+    margin-bottom: 30px;
+    margin: 30px 15px;
+    border-radius: 55px;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.menu {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 0;
+    float: right;
+}
+
+.menu a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col {
+    width: calc(33.333% - 30px);
+    float: left;
+    height: 300px;
+    background-color: #3ab4c3;
+    margin: 15px;
+    box-shadow: 1px 1px 11px #adabab;
+    border-radius: 20px;
+    padding: 30px;
+    color: #fff;
+}
+
+.col-50 {
+    width: calc(50% - 30px);
+    float: left;
+    height: 300px;
+    background-color: #2f8994;
+    margin: 15px;
+    box-shadow: 1px 1px 11px #adabab;
+    border-radius: 20px;
+    padding: 30px;
+    color: #fff;
+}
+
+@media (max-width:767.98px) {
+    .col {
+        width: calc(50% - 30px);
+    }
+}
+
+@media (max-width:575.98px) {
+    .col {
+        width: calc(100% - 30px);
+    }
+    .col-50 {
+        width: calc(100% - 30px);
+    }
+    .logo, .menu {
+        display: block;
+        float: none;
+    }
+    .menu a {
+        margin-left: 0;
+        margin-bottom: 15px;
+        display: block;
+    }
+}

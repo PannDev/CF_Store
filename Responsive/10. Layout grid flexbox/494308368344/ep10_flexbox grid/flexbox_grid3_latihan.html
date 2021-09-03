@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Responsive</title>
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <style>
+        *,
+         ::after,
+         ::before {
+            box-sizing: border-box;
+        }
+        
+        body {
+            /* //ubah default dari chrome */
+            margin: 0;
+            font-family: sans-serif;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        /* //header */
+        
+        header {
+            padding: 30px;
+            background-color: #969696;
+            font-size: 22px;
+        }
+        
+        .logo,
+        .menu {
+            width: unset;
+        }
+        
+        section {
+            padding-bottom: 60px;
+            padding-top: 60px;
+        }
+        
+        .section-banner {
+            background-color: rgb(241, 241, 241);
+            min-height: 600px;
+        }
+        
+        .section-header {
+            margin-bottom: 30px;
+        }
+        
+        .section-header h2 {
+            font-size: 40px;
+            font-weight: 600;
+        }
+        
+        .card {
+            background-color: #969696;
+        }
+        
+        .card-top {
+            min-height: 200px;
+            background-color: rgb(241, 241, 241);
+        }
+        
+        .card-content {
+            padding: 15px;
+            font-size: 20px;
+        }
+
+        .mb-3 {
+            margin-bottom: 15px;
+        }
+
+        @media (min-width:767px) {
+            .mb-3 {
+            margin-bottom: unset;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row row-nowrap justify-content-between">
+                <div class="logo">logo</div>
+                <div class="menu">
+                    menu
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- start/ section banner -->
+        <section class="section-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center">
+                            Banner
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- start/ section feature -->
+
+        <section class="section-feature">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 section-header text-center ">
+                        <h2>Our Feature</h2>
+                    </div>
+                    <!-- <div class="col-12 col-sm-12 col-md-4"></div> -->
+                    <div class="col-12 col-sm-12 col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-top">
+                                <div class="bg"></div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Feature 1</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-top">
+                                <div class="bg"></div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Feature 2</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-top">
+                                <div class="bg"></div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Feature 3</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p class="text-center">&copy; 2021 CodeFirst</p>
+        </div>
+    </footer>
+</body>
+
+</html>

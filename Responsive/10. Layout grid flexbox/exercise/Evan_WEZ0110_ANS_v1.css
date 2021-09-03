@@ -1,0 +1,118 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    /* //ubah default dari chrome */
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* //header */
+
+header {
+    color: white;
+    padding: 15px;
+    background-color: black;
+    font-size: 22px;
+}
+
+.logo, .menu {
+    width: unset;
+}
+
+section {
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.section-banner {
+    /* background-color: rgb(241, 241, 241); */
+    background-image: url(images/banner_bg2.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 650px;
+}
+
+.text-banner {
+    letter-spacing: 3px;
+    padding-top: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.section-header {
+    margin-bottom: 30px;
+}
+
+.section-header h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.card {
+    /* background-color: #969696; */
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.card-top {
+    min-height: 200px;
+    /* background-color: rgb(241, 241, 241); */
+}
+
+.bakso, .billboard, .photography {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bakso {
+    background-image: url(images/bakso.jpg);
+}
+
+.billboard {
+    background-image: url(images/Billboard.jpg);
+}
+
+.photography {
+    background-image: url(images/photography.jpg);
+}
+
+.card-content {
+    padding: 15px;
+    font-size: 20px;
+}
+
+.mb-3 {
+    margin-bottom: 15px;
+}
+
+@media (max-width:767px) {
+    .mb-3 {
+        margin-bottom: unset;
+    }
+    .column {
+        flex-direction: column;
+    }
+    .menu {
+        margin-top: 5px;
+    }
+    .logo, .menu {
+        text-align: center;
+    }
+    .card {
+        flex-basis: 100%;
+    }
+}

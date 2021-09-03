@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+</head>
+
+<body>
+    <pre>
+        Saya Memiliki data seperti ini :
+        
+        Nama :
+        Nilai 1 :
+        Nilai 2 :
+        Keterangan :
+        
+        *contoh 
+
+        Nama : Yulyanto
+        Nilai 1: 80
+        Nilai 2: 90
+        Keterangan : Lulus
+
+
+        Catatan ! 
+
+        ada 2 keterangan LULUS dan Tidak LULUS
+
+        Keterangan LULUS jika 
+        Nilai 1 dan Nilai 2 rata-ratanya diatas 75 *75 masih LULUS 
+        
+        Tidak Lulus jika
+        Nilai 1 dan Nilai 2 rata-ratanya dibawah 74
+
+        
+        Berati yang perlu disiapkan :
+        1) Buat 4 variable Nama, Nilai 1, Nilai 2 dan Keterangan  
+            (variable lainnya bisa teman-teman tambah jika perlu)
+        2) Nama, Nilai 1 , Nilai 2 dibuat Inputan (promt)
+        3) Keterangan hanya Lulus dan Tidak Lulus (*liat ketentuan diatas)
+        4) Tampilkan dengan alert Semua data 
+            Alert (Selamat 'Yulyanto' Kamu Lulus);
+            jika tidak lulus
+            Alert (Maaf Yulyanto kamu tidak lulus);
+        5) Rata-Rata didapatkan dari ((Nilai1 + Nilai2) / 2 )
+
+
+    </pre>
+
+    <script>
+
+        var Nama = prompt('Masukan Nama');
+        var Nilai1 = prompt('Masukan Nilai 1');
+        var Nilai2 = prompt('Masukan Nilai 2');
+        var keterangan;
+        rata = ( parseInt( Nilai1 ) + parseInt( Nilai2) / 2);
+
+        if(rata >= 75) {
+            alert('Selamat Kamu Lulus');
+        }
+
+        else {
+            alert('Maaf kamu tidak lulus');
+        }
+        
+    </script>
+</body>
+
+</html>

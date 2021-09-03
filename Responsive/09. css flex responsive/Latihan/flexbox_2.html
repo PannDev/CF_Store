@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 2</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        /* header */
+        
+        header {
+            background-color: rgb(126, 126, 126);
+        }
+        
+        header .row {
+            justify-content: space-between;
+            margin: 0;
+        }
+        
+        .logo {
+            width: 200px;
+            height: 50px;
+            background-color: rgba(238, 238, 238, 0.8);
+        }
+        
+        .menu {
+            height: 50px;
+            background-color: rgba(238, 238, 238, 0.8);
+        }
+        
+        .menu ul {
+            list-style: none;
+            padding-left: 0;
+            height: 100%;
+        }
+        
+        .menu ul li {
+            display: inline-block;
+            margin-left: 15px;
+        }
+        /* header */
+        
+        .container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .row {
+            display: flex;
+            flex-direction: row;
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        
+        .col {
+            /* penulisan ini artinya flex */
+            /* flex : 1 1 calc(50% - 30px); */
+            /* atau bisa tulis -> flex-basis: calc(50% - 30px); */
+            flex: calc(50% - 30px);
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 30px;
+            min-height: 300px;
+            font-size: 50px;
+            color: #fff;
+        }
+        /* child pertama */
+        
+        .col:nth-child(1) {
+            background: #84f2c0;
+        }
+        /* child kedua */
+        
+        .col:nth-child(2) {
+            background: #ffd455;
+        }
+        
+        .col:nth-child(3) {
+            background: #f48d83;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .container-banner {
+            margin-top: 30px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="logo"> Logo </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Menu </a></li>
+                        <li><a href="#">Menu </a></li>
+                        <li><a href="#">Menu </a></li>
+                        <li><a href="#">Menu </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container container-banner">
+        <!-- baris 1 -->
+        <div class="row">
+            <div class="col text-center">
+                kiri
+            </div>
+            <div class="col text-center">
+                kanan
+            </div>
+        </div>
+        <!-- baris 2 -->
+        <div class="row">
+            <div class="col text-center">
+                kiri
+            </div>
+            <div class="col text-center">
+                tengah
+            </div>
+            <div class="col text-center">
+                kanan
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

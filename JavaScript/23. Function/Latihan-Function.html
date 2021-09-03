@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+
+<body>
+
+    <div class="top">
+        <h1>Button Latihan Function</h1>
+        <button class="click" onclick="tampilkanAlert1()    ">click me</button>
+    </div>
+
+    <script>
+        tampilkanAlert1(); // cara manggil
+
+        function tampilkanAlert1() {
+            alert('test function');
+
+            //mangil alert 2
+            tampilkanAlert2('Pesan Kedua !', 'param kedua');
+        }
+
+        function tampilkanAlert2(params, params2) {
+            alert(params);
+            console.log(params2);
+        }
+    </script>
+
+</body>
+
+</html>

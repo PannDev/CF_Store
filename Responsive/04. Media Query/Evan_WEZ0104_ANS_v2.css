@@ -1,0 +1,126 @@
+/* Css Reset */
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Css Style */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.fr-medium, .fr-small, .fr-exsmall, .fr-large {
+    display: none;
+}
+
+.box-world p {
+    color: rgb(3, 204, 3);
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: rgb(230, 250, 201);
+}
+
+.box-world {
+    width: calc(25% - 15px);
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+}
+
+.ukuran h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    text-align: center;
+}
+
+.hello-world {
+    text-align: center;
+}
+
+/* Gambar 6 Exstra Small */
+
+@media screen and (max-width:575px) {
+    .fr-exsmall {
+        display: block;
+    }
+    .ukuran {
+        background-color: white;
+    }
+    .ukuran h2 {
+        color: black;
+    }
+    .box-world {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .fr-medium, .fr-small, .fr-large {
+        display: none;
+    }
+}
+
+/* Gambar 5 Small */
+
+@media screen and (min-width:576px) {
+    .fr-small {
+        display: block;
+    }
+    .ukuran {
+        background-color: black;
+    }
+    .box-world {
+        width: 49%;
+    }
+    .fr-medium, .fr-exsmall, .fr-large {
+        display: none;
+    }
+}
+
+/* Gambar 4 Medium */
+
+@media screen and (min-width:768px) {
+    /* h2 medium */
+    .fr-medium {
+        display: block;
+    }
+    .ukuran {
+        background-color: silver;
+    }
+    .fr-large {
+        display: none;
+    }
+    .fr-small {
+        display: none;
+    }
+    .box-world {
+        width: calc(33.33% - 30px);
+    }
+}
+
+/* Gambar 3 Large*/
+
+@media screen and (min-width:992px) {
+    .fr-large {
+        display: block;
+    }
+    .ukuran {
+        background-color: rgb(255, 201, 219);
+    }
+    .fr-medium {
+        display: none;
+    }
+}

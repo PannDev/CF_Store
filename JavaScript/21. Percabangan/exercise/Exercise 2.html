@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Percabangan 2</title>
+</head>
+
+<body>
+    <!-- buat skema kalkulator sederhana -->
+    <pre>
+        1) Gunakan Operator Aritmatika
+        2) Gunakan Inputan dengan prompt() inputan dibuat dengan 3kali, 
+        jadi saya memiliki 3 input variable yang mesti melakukan operatir Aritmatik
+        3) Masukan masing-masing prompt kedalam varibel BilA, BilB dan Operator
+        4) Gunakan Output Alert untuk hasil penjumlahan
+        5) Jadi berarti pertama kita akan munculkan dulu prom (inputan BilA)
+           kemudian munculkan inputan operator (bisa masukan semua operator aritmatik)
+           Masukan nilai kedua BILB. 
+           Terakhir munculkan hasilnya 
+           
+        6) Perbedaannya ketika output tidak boleh menggunakan cara yang sebelumnya
+            gunakan percabangan IF untuk menentukan output
+            contoh
+            
+            if(operator == "*"){
+                alert(parseInt(BilA) * parseInt(BilB));
+
+                *NOTE gunakan ParseInt 
+                ParseInt digunakan untuk merubah data dari string ke number
+                jika kita tidak tambahkan parseInt maka akan dianggap menjulahkan 2 string
+            }
+            //lakukan dengan if else 
+            jika error (atau diluar data aritmatika) kasih tau data yang ada masukan salah 
+
+
+        *------
+        
+        
+    
+    </pre>
+
+    <script>
+        var BilA;
+        var Operator;
+        var BilB;
+
+        BilA = prompt("BilA");
+        Operator = prompt("Operator");
+        BilB = prompt("BilB");
+
+        if (Operator == "*") //perkalian  
+        {
+            alert(parseInt(BilA) * parseInt(BilB));
+        }
+        else if (Operator == "/") //pembagian 
+        {
+            alert(parseInt(BilA) / parseInt(BilB));
+        }
+        else if (Operator == "+") //pertambahan 
+        {
+            alert(parseInt(BilA) + parseInt(BilB));
+        }
+        else if (Operator == "-") //pengurangan 
+        {
+            alert(parseInt(BilA) - parseInt(BilB));
+        }
+        else {
+            alert('data yang dimasukan tidak valid.');
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Container</title>
+    <link rel="stylesheet" href="flexbox.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="row">
+                <a href="flexbox1 - order.html" style="font-weight: bold;"> flex Order</a>
+                <a href="flexbox2 - flex-grow.html"> flex-grow</a>
+                <a href="flexbox3 - flex-shrink.html"> flex-shrink</a>
+                <a href="flexbox4 - flex-basis.html"> flex-basis</a>
+                <a href="flexbox5 - flex.html"> flex</a>
+                <a href="flexbox6 - align-self.html"> align-self</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Contoh Flex Item</h2>
+
+        <!-- //row jadi flex-container -->
+        <h2>1 contoh display flex non order</h2>
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+            <div class="col">6</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- //row jadi flex-container -->
+        <h2>2 contoh display flex order</h2>
+        <div class="row flex-nowrap">
+            <div class="col">1</div>
+            <div class="col" style="order: -1;">2 (order -1)</div>
+            <div class="col" style="order: -2;">3 (order -2)</div>
+            <div class="col">4</div>
+            <div class="col" style="order: 1;">5 (order 1)</div>
+            <div class="col">6</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- //row jadi flex-container -->
+        <h2>3 contoh display flex order</h2>
+        <div class="row flex-nowrap">
+            <div class="col">1</div>
+            <div class="col" style="order: 2;">2 (order 2)</div>
+            <div class="col" style="order: 3;">3 (order 3)</div>
+            <div class="col" style="order: 4;">4 (order 4)</div>
+            <div class="col" style="order: 1;">5 (order 1)</div>
+            <div class="col">6</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

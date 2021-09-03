@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Dom 1</title>
+    <link rel="stylesheet" href="reset.css">
+
+    <!-- Css -->
+    <style>
+        .btn {
+            background-color: black;
+            text-align: center;
+            padding: 10px 15px;
+            font-size: 20px;
+            color: white;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(29, 29, 29);
+        }
+
+        .card-content h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            font-size: 18px;
+            line-height: 23px;
+        }
+
+        .contorls {
+            padding: 15px;
+            max-width: 1200px;
+            margin: 60px auto;
+            display: flex;
+        }
+
+        .controlsbtn {
+            margin-top: 30px;
+        }
+
+        .box {
+            background-color: blanchedalmond;
+            padding: 30px;
+            flex: 33.33%;
+            border: 2px solid black;
+        }
+
+        .card {
+            margin-top: 60px;
+            padding: 30px;
+            width: 350px;
+            /* border: 1px solid black; */
+            box-shadow: 0 0 34px 0px #00000038;
+            border-radius: 15px;
+        }
+
+        .card-top {
+            width: 350px;
+        }
+
+        .card-top img {
+            width: 80%;
+            margin-bottom: 30px;
+        }
+
+        .card-content {
+            max-width: 350px;
+            line-height: 25px;
+        }
+
+        .card-content .btn {
+            margin-top: 30px;
+        }
+
+        .box span {
+            color: rgb(16, 150, 3);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="text-center" style="margin-top: 30px;">Document Object Model (Document)</h1>
+
+    <!-- Img Card Content -->
+    <!-- cthCard -->
+    <div class="card container" id="cthCard">
+        <!-- img -->
+        <div class="card-top">
+            <img src="gambar.png" alt="" width="100%">
+        </div>
+        <!-- Card Content -->
+        <div class="card-content">
+            <h2>Title Card</h2>
+            <!-- lorem -->
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum expedita fugiat aliquid unde
+                voluptate aspernatur esse iure nesciunt delectus fuga architecto doloremque a dolorem earum, et totam
+                similique? Eaque, officia.
+            </p>
+            <div class="btn">Button</div>
+        </div>
+    </div>
+
+    <div class="contorls" id="controls2">
+        <!-- Back Color by id -->
+        <div class="box" id="ByID">
+            <h3>Contoh dom <span>get element by ID</span> dan <span>ganti background card</span></h3>
+            <div class="controlsbtn btn btn1" id="btn1">Ganti Back Color</div>
+        </div>
+
+        <!-- Back Color by class -->
+        <div class="box">
+            <h3>Contoh dom <span>get element by Class </span> dan <span>ganti background class btn</span></h3>
+            <div class="controlsbtn btn btn2" id="btn2">Ganti Class btn</div>
+        </div>
+
+        <!-- Back Color by tag -->
+        <div class="box">
+            <h3>Contoh dom <span>get element by TAG</span> dan <span>ganti "Nilai atau text" element</span></h3>
+            <div class="controlsbtn btn btn3" id="btn3">Ganti Text Value (h2)</div>
+        </div>
+    </div>
+
+
+    <script>
+        // Manipulasi DOM bagian 2 - Add EventListerner
+        let btn1 = document.querySelector('.btn1');
+        let btn2 = document.querySelector('.btn2');
+        let btn3 = document.querySelector('.btn3');
+
+        btn1.addEventListener('click', ByID);
+        btn2.addEventListener('click', ByClass);
+        btn3.addEventListener('click', ByTag);
+
+        // Manipulasi DOM bagian 1
+        
+        function ByID() {
+            // get element yg akan diubah dulu
+            var Byid = document.getElementById('ByID');
+            var Byid2 = document.getElementById('cthCard');
+            //update style css
+            Byid.style.setProperty('background-color', 'blue');
+            Byid2.style.setProperty('background-color', 'green');
+        }
+
+        function ByClass() {
+            //get element yg akan diubah
+            var Byclass = document.getElementsByClassName('btn');
+            console.log(Byclass); //hasilny disini akan object array
+
+            //perlu di looping dulu
+            //gunakan for of
+            for (const item of Byclass) {
+                //baru bisa dapat data itemnya 
+                console.log(item); //hasil masing2 data
+                // update style css
+                item.style.setProperty('background-color', 'darkturquoise');
+            }
+        }
+
+        function ByTag() {
+            var Bytag = document.getElementsByTagName('h2');
+            console.log(Bytag); //hasilnya disini akan object array
+            // perlu di loop dulu
+            //gunakan for of
+            for (const item of Bytag) {
+                //kita baru bisa dapat data itemnya masing2
+                console.log(item); //hasil masing2 data
+                // item.innerTexr = 'Contoh Card'; // hanya bekerja menjadi text atau string
+                item.innerHTML = '<i style="color: red;">Tulisan Berubah</i>'; //jika kita ingin menambaah element html
+            }
+        }
+    </script>
+
+</body>
+
+</html>

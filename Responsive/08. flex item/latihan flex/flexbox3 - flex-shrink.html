@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Container</title>
+    <link rel="stylesheet" href="flexbox.css">
+    <style>
+        .flex-shrink {}
+        
+        .flex-shrink .col {}
+        
+        .flex-shrink .col:nth-child(2) {
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="row">
+                <a href="flexbox1 - order.html"> flex Order</a>
+                <a href="flexbox2 - flex-grow.html"> flex-grow</a>
+                <a href="flexbox3 - flex-shrink.html" style="font-weight: bold;"> flex-shrink</a>
+                <a href="flexbox4 - flex-basis.html"> flex-basis</a>
+                <a href="flexbox5 - flex.html"> flex</a>
+                <a href="flexbox6 - align-self.html"> align-self</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Contoh Flex dengan flex-shrink </h2>
+        <p>
+            flex-shrink akan berusaha mengurangi ukuran dari item jika container tidak mampu memuatnya.
+            <br> nilai bawaannya adalah 1, maka setiap item akan dikurangi ukurannya supaya item bisa masuk container tanpa pindah ke bawah.
+            <br> semakin besar nilainya semakin besar pula ukuran yang akan dikurangi
+        </p>
+        <div class="row flex-row flex-shrink">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- //row jadi flex-container -->
+        <h2>contoh flex-shirnk dan flex-grow</h2>
+        <div class="row justify-content-flex-end">
+            <div class="col" style="flex-grow: 2;">1 grow</div>
+            <div class="col">2</div>
+            <div class="col" style="flex-shrink: 2;">3 shirnk</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+            <div class="col">6</div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

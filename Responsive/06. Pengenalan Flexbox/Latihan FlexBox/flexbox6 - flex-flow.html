@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Container // Flex-Flow</title>
+    <link rel="stylesheet" href="flexbox.css">
+    <style>
+        /* css sintaks */
+        /* flex-flow: flex-direction flex-wrap|initial|inherit; */
+        
+        .flex-flow {
+            flex-flow: row wrap;
+        }
+        
+        .flex-flow-nowrap {
+            flex-flow: row nowrap;
+        }
+        
+        .flex-flow-row-reverse {
+            flex-flow: row-reverse wrap;
+        }
+        
+        .flex-flow-row-reverse {
+            flex-flow: row-reverse wrap;
+        }
+        
+        .flex-flow-column {
+            flex-flow: column wrap;
+            max-height: 800px;
+        }
+        
+        .flex-flow-column-reverse {
+            flex-flow: column-reverse wrap;
+            max-height: 800px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="row">
+                <a href="flexbox1 - flex-wrap.html"> flex wrap</a>
+                <a href="flexbox2 - flex-direction.html"> flex-direction</a>
+                <a href="flexbox3 - justify-content.html"> justify-content</a>
+                <a href="flexbox4 - align-content.html"> align-content</a>
+                <a href="flexbox5 - align-items.html"> align-items</a>
+                <a href="flexbox6 - flex-flow.html"> flex-flow</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Contoh Flex dengan Flex flow</h2>
+
+        <!-- //row jadi flex-container -->
+        <h2>contoh display flex</h2>
+        <div class="row flex-flow">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+            <div class="col">6</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- //row jadi flex-container -->
+        <h2>contoh display flex dengan flex-nowrap</h2>
+        <div class="row flex-flow-nowrap">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+            <div class="col">6</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- //row jadi flex-container -->
+        <h2>contoh display flex dengan flex-wrap</h2>
+        <div class="row flex-flow-row-reverse">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+            <div class="col">6</div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- //row jadi flex-container -->
+        <h2>contoh display flex dengan flex-flow-column</h2>
+        <div class="row flex-flow-column">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+            <div class="col">6</div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- //row jadi flex-container -->
+        <h2>contoh display flex dengan flow-column-reverse</h2>
+        <div class="row flex-flow-column-reverse">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+            <div class="col">6</div>
+        </div>
+    </div>
+</body>
+
+</html>

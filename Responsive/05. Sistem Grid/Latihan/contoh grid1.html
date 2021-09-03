@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Grid 1</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .col {
+            min-height: 700px;
+        }
+
+        .inner {
+            min-height: 100%;
+            background-color: #c1dff9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- bagian 1 -->
+        <div class="row clearfix">
+            <div class="col col-md-4 col-sm-4">
+                col-md-4
+            </div>
+            <div class="col col-md-8 col-sm-4">
+                col-md-8
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- bagian 1 -->
+        <div class="row clearfix">
+            <div class="col col-md-2 col-sm-4">
+                col-md-2
+            </div>
+            <div class="col col-md-8 col-sm-4">
+                col-md-8
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-md-6 inner">
+                            col-md-6
+                        </div>
+                        <div class="col col-md-6 inner">
+                            col-md-6
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-2 col-sm-4">
+                col-md-8
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
