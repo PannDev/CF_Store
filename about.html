@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="responsive.css"> <!-- Responsive -->
 </head>
 
-<body>
+<body class="">
     <style>
         .about-us {
             margin-top: 50px;
@@ -49,10 +49,10 @@
                 <!-- Home Shop Contact About -->
                 <div class="nav-center col-sm-4 col-xs-12">
                     <ul class="list-style-none">
-                        <li><a href="index.html"> <b>Home</b> </a></li>
+                        <li><a href="index.html">Home </a></li>
                         <li><a href="shop.html">Shop</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.html"><b>About</b></a></li>
                     </ul>
                 </div>
                 <!-- Logo IG -->
@@ -220,6 +220,17 @@
             </div>
         </div>
     </footer>
+
+        <!-- J script -->
+        <script>
+            let menu = document.querySelector('.burger_menu').addEventListener('click', setMenu);
+            // menu.addEventListener('click',setMenu);
+    
+            function setMenu() {
+                let setBody = document.querySelector('body');
+                setBody.classList.toggle('menu_active');
+            }
+        </script>
 </body>
 
 </html>

@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="responsive.css"> <!-- Responsive -->
 </head>
 
-<body>
+<body class="">
     <style>
         main {
             text-align: center;
@@ -44,9 +44,9 @@
                 <!-- Home Shop Contact About -->
                 <div class="nav-center col-sm-4 col-xs-12">
                     <ul class="list-style-none">
-                        <li><a href="index.html"> <b>Home</b> </a></li>
+                        <li><a href="index.html"> Home </a></li>
                         <li><a href="shop.html">Shop</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html"><b>Contact</b></a></li>
                         <li><a href="about.html">About</a></li>
                     </ul>
                 </div>
@@ -109,5 +109,16 @@
     </main>
 
 </body>
+
+    <!-- J script -->
+    <script>
+        let menu = document.querySelector('.burger_menu').addEventListener('click', setMenu);
+        // menu.addEventListener('click',setMenu);
+
+        function setMenu() {
+            let setBody = document.querySelector('body');
+            setBody.classList.toggle('menu_active');
+        }
+    </script>
 
 </html>

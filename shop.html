@@ -20,16 +20,9 @@
     <link rel="stylesheet" href="style.css"> <!-- Style Css -->
     <link rel="stylesheet" href="Aset/Source/flexboxgrid.css"> <!-- Flexbox Grid Css -->
     <link rel="stylesheet" href="responsive.css"> <!-- Responsive -->
-</head>
 
-<body>
-
-    <!-- Style -->
+     <!-- Style -->
     <style>
-        header {
-            margin-bottom: 100px;
-        }
-
         footer {
             margin-top: 150px;
         }
@@ -38,6 +31,10 @@
             margin-top: 50px;
         }
     </style>
+</head>
+
+<body class="menu_active">
+
 
     <!-- CF Store, Menyediakan Segala kebutuhan komputer anda! -->
     <div class="message_alert">
@@ -55,8 +52,8 @@
                 <!-- Home Shop Contact About -->
                 <div class="nav-center col-sm-4 col-xs-12">
                     <ul class="list-style-none">
-                        <li><a href="index.html"> <b>Home</b> </a></li>
-                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="index.html"> Home </a></li>
+                        <li><a href="shop.html"><b>Shop</b></a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="about.html">About</a></li>
                     </ul>
@@ -356,6 +353,17 @@
             </div>
         </div>
     </footer>
+
+        <!-- J script -->
+        <script>
+            let menu = document.querySelector('.burger_menu').addEventListener('click', setMenu);
+            // menu.addEventListener('click',setMenu);
+    
+            function setMenu() {
+                let setBody = document.querySelector('body');
+                setBody.classList.toggle('menu_active');
+            }
+        </script>
 
 </body>
 
