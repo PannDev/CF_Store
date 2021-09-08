@@ -1,0 +1,544 @@
+:root {
+    --color-primary: #1b1b1b;
+    --color-secondary: #52a4dd;
+    --color-font: #1b1b1b;
+    --color-dark: #1b1b1b;
+    --color-white: #fff;
+    --color-bg: #ffffff;
+    --color-logo: #000000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.relative {
+    position: relative;
+}
+
+.mb-3 {
+    margin-bottom: 30px;
+}
+
+/* Message Alert */
+
+.message_alert {
+    width: 100%;
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px 30px;
+}
+
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+/* Hover */
+
+header a {
+    position: relative;
+}
+
+header a::after {
+    z-index: 10;
+    content: "";
+    position: absolute;
+    width: 0;
+    opacity: 0;
+    height: 2px;
+    left: 0;
+    bottom: -0.43rem;
+    background-color: rgb(0, 0, 0);
+    -webkit-transition: width 0.6s ease-in-out;
+    transition: width 0.6s ease-in-out;
+}
+
+header a:hover::after {
+    width: 100%;
+    opacity: 1;
+    transition: 0.6s;
+}
+
+
+/* ul li a:hover {
+    color: #52a4dd;
+    transition: 0.3s;
+} */
+
+.btn-outline:hover::after {
+    background-color: var(--color-dark);
+    color: #fff;
+}
+
+/* Header */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* Header */
+
+header {
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: var(--color-bg);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.nav-left img {
+    width: 150px;
+    object-fit: contain;
+}
+
+header nav {
+    align-items: center;
+}
+
+.nav-center {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.nav-center ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.nav-center ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.nav-center ul li a {
+    text-transform: uppercase;
+}
+
+.nav-right {
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+.nav-right img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* Hero */
+
+.hero_content {
+    display: flex;
+    align-items: center;
+}
+
+.hero_content .sub-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Headphone With Strong Bass and Clear Audio */
+
+.hero_content h1 {
+    max-width: 400px;
+    margin-top: 0;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Hanya IDR 800.000 */
+
+.hero_content h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.hero-content--wrapper {
+    max-width: 500px;
+}
+
+a.btn-hov:hover {
+    color: white;
+    background: black;
+    transition: 0.6s;
+}
+
+.btn {
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    /* background-color: azure; */
+}
+
+.btn-outline {
+    border: 3px solid black;
+    background-color: transparent;
+    border: 1px solid var(--color-dark);
+    transition: 0.4s all ease;
+}
+
+.hero_img img {
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+    object-position: center;
+    display: inline-block;
+    max-height: 550px;
+}
+
+.box-benefit {
+    padding: 30px 0;
+    background-color: #f7f7f7;
+}
+
+.box-benefit-content {
+    display: flex;
+    align-items: center;
+}
+
+.box-benefit-text {
+    max-width: 250px;
+}
+
+.box-benefit-icon {
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.box-benefit-icon img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+/* Feature */
+
+.section-feature {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.card {
+    padding: 15px;
+}
+
+.card:hover {
+    background: #bdbdbd17;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.card-img {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card:hover .card-action .btn {
+    background: #77c3ff;
+    transition: 0.6s ease all;
+}
+
+.card-content {
+    text-align: center;
+}
+
+.product-name {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.product-price {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.card-action {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card-action .btn {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin: auto;
+    font-size: 14px;
+}
+
+.new-product {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: hsl(205, 67%, 59%);
+    color: white;
+    padding: 5px 10px;
+}
+
+.promo-product {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fd938b;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.see-more {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.btn-see-more {
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.btn-see-more:hover {
+    color: white;
+    background-color: black;
+    transition: 0.6s;
+}
+
+/* <!-- section mini about --> */
+
+.section_mini_about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.mini-about-logo {
+    width: 200px;
+    display: flex;
+    margin: auto;
+}
+
+.img--wrapper {
+    display: flex;
+    height: 100%;
+}
+
+.mini-about-content {
+    color: white;
+}
+
+
+.mini-about-content .btn:hover {
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+    transition: 0.6s;
+}
+
+/* Sekilas Tentang CF Store */
+
+.mini-about-content h2 {
+    font-size: 45px;
+    letter-spacing: 1px;
+}
+
+.mini-about-content p {
+    line-height: 35px;
+    font-size: 20px;
+}
+
+.mini-about-content .btn {
+    margin-top: 30px;
+    display: inline-block;
+    border: 1px solid white;
+    background-color: black;
+    padding: 20px 30px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Parallax */
+
+.parallax {
+    /* The Image Used */
+    background-image: url(Aset/Assets/img/bg-mini-about2.jpg);
+    /* Set a specific height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: brightness(0.9); */
+}
+
+.parallax .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.637);
+    opacity: 0.3;
+}
+
+.section_mini_about .container {
+    z-index: 9;
+    position: relative;
+}
+
+/* Footer */
+
+footer {
+    background: black;
+    padding-top: 70px;
+    padding-bottom: 15px;
+    color: white;
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+    line-height: 20px;
+}
+
+footer p {
+    line-height: 20px;
+    max-width: 300px;
+}
+
+footer h4 {
+    letter-spacing: 2px;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-top: 21px;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+.footer-bottom {
+    display: flex;
+    border-top: 1px solid #fff;
+    margin-top: 60px;
+    padding-top: 15px;
+}
+
+footer ul li p b {
+    line-height: 30px;
+}
+
+.contact_social-media li {
+    font-size: 35px;
+    margin: 5px 10px;
+    display: inline-block;
+}
+
+footer .contact_social-media {
+    margin: 0;
+}
+
+footer ul img {
+    max-width: 125px;
+    max-height: 50px;
+    object-fit: cover;
+}
+
+.list-marketplace li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.list-marketplace li img {
+    width: 70px;
+    display: block;
+    height: auto;
+    object-fit: contain;
+}
+
+.list-marketplace li {
+    margin-right: 10px;
+}
+
+/* menu mobile */
+.burger_menu {
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    bottom: 0px;
+}
+
+.burger_items {
+    width: 100%;
+    height: 2px;
+    margin-top: 5px;
+    background-color: black;
+    transition: 0.6s;
+}
+
+.menu_mobile {
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.menu_active .burger_menu .burger_items:nth-child(1) {
+    transform: rotate(45deg);
+    margin-top: 10px;
+}
+
+.menu_active .burger_menu .burger_items:nth-child(2) {
+    display: none;
+}
+
+.menu_active .burger_menu .burger_items:nth-child(3) {
+    transform: rotate(-45deg);
+    margin-top: -3px;
+}
+
+/* Responsive mobile menu burger di responsive.css (768px) */

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prafinal Project</title>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/807d51979a.js" crossorigin="anonymous"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="reset.css"> <!-- Reset Css -->
+    <link rel="stylesheet" href="style.css"> <!-- Style Css -->
+    <link rel="stylesheet" href="Aset/Source/flexboxgrid.css"> <!-- Flexbox Grid Css -->
+    <link rel="stylesheet" href="responsive.css"> <!-- Responsive -->
+</head>
+
+<body>
+
+    <!-- Style -->
+    <style>
+        header {
+            margin-bottom: 100px;
+        }
+
+        footer {
+            margin-top: 150px;
+        }
+
+        .details-image {
+            position: sticky;
+            top: 50px;
+        }
+
+        .details-image img {
+            width: 50%;
+            height: 100%;
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+
+        .bg-grey {
+            background-color: #fdfdfd;
+            padding: 30px;
+        }
+
+        .pesan-sekarang {
+            margin-top: 50px;
+        }
+
+        .pesan-sekarang h4 {
+            font-size: 30px;
+        }
+
+        .details-spesifikasi {
+            margin-top: 30px;
+        }
+
+        h4 {
+            font-size: 25px;
+        }
+
+        h2 {
+            font-size: 35px;
+        }
+
+        /* Pesan Sekarang ! */
+
+        .pesan-sekarang {
+            max-width: 400px;
+        }
+
+        .pesan-sekarang h4 {
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .box_masukan_jumlah {
+            border-top: #d3d3d3 solid 1px;
+            border-bottom: #d3d3d3 solid 1px;
+            margin-bottom: 22px;
+        }
+
+        .form_jumlah {
+            margin-bottom: 22px;
+        }
+
+        .form_jumlah label {
+            font-size: 18px;
+        }
+
+        .form_jumlah input {
+            height: 40px;
+            font-size: 15px;
+            padding: 10px;
+            margin-left: 15px;
+            width: 100px;
+        }
+
+        .total_harga {
+            border-bottom: #d3d3d3 solid 1px;
+        }
+
+        #total_harga {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 22px;
+        }
+
+        .btn_details {
+            border: black solid 2px;
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 170px;
+            height: 60px;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        .btn_details:hover {
+            background: #abe06d;
+            color: #fff;
+            border-color: #abe06d;
+            transition: 0.4s;
+        }
+
+        .btn_details a {
+            width: 100%;
+        }
+    </style>
+
+    <!-- CF Store, Menyediakan Segala kebutuhan komputer anda! -->
+    <div class="message_alert">
+        <span>CF Store, Menyediakan Segala kebutuhan komputer anda!</span>
+    </div>
+
+    <header>
+        <div class="container">
+            <!-- Nav Row -->
+            <nav class="row between-sm">
+                <!-- Logo Cf Store -->
+                <div class="nav-left col-sm-4 col-xs-12">
+                    <a href=""><img src="Aset/Assets/logo/logo-dark.png" alt=""></a>
+                </div>
+                <!-- Home Shop Contact About -->
+                <div class="nav-center col-sm-4 col-xs-12">
+                    <ul class="list-style-none">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <!-- Logo IG -->
+                <div class="nav-right col-sm-4 col-xs-12">
+                    <img src="Aset/Assets/icon/instagram2.png" alt="">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="detail-produk">
+            <div class="container">
+                <div class="row">
+                    <!-- Gambar Kiri-->
+                    <div class="col-md-6">
+                        <div class="details-image">
+                            <img src="Aset/Assets/product/airpod.png" alt="">
+                        </div>
+                    </div>
+                    <!-- Content Kanan -->
+                    <div class="col-md-6 bg-grey">
+                        <div class="details-content">
+                            <h2 id="nama_produk">Airpod</h2>
+                            <h4>IDR. 1.200.000</h4>
+                            <!-- Deskripsi Barang -->
+                            <p>
+                                Airpod
+                            </p>
+                            <div class="details-spesifikasi">
+                                <!-- Spesifikasi -->
+                                <p><b>Spesifikasi</b></p>
+                                <!-- Operating - Processsor - Graphics // Kasih Jarak -->
+                                <table>
+                                    <tbody>
+                                        <!-- Operating System -->
+                                        <tr>
+                                            <td> </td>
+                                            <td>Sudah memakai Proximity Sensor untuk deteksi telinga otomatis</td>
+                                        </tr>
+                                        <!-- Processor -->
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                HD sound sudah seperti original, karakter suaranya balanced antara
+                                                treble dan bass
+                                            </td>
+                                        </tr>
+                                        <!-- Graphics -->
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                Versi bluetooth terbaru 5.0. tidak perlu takut delay lagi
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>Sudah support Siri via double tap di sensor</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Pesan Sekarang -->
+                        <div class="pesan-sekarang">
+                            <h4>Pesan Sekarang !</h4>
+
+                            <form>
+                                <div class="box_masukan_jumlah">
+                                    <p>Masukan Jumlah Yang Ingin Di Pesan</p>
+                                    <div class="form_jumlah">
+                                        <label for=""><b>Jumlah</b></label>
+                                        <input type="number" id="number" value="1" min="1">
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div class="total_harga">
+                                <p>Perkiraan total harga yang dibayarkan</p>
+                                <div id="total_harga" data-harga="1200000">IDR. 1200000 </div>
+                            </div>
+
+                            <div class="box_pesan_wa">
+                                <a href="" onclick="wa()">
+                                    <div class="btn_details btn-outline-details">
+                                        <i class="fab fa-whatsapp" style="margin-right: 5px;" aria-hidden="true"></i>
+                                        PESAN
+                                    </div>
+                                </a>
+                                <p style="font-size: 12px;margin-top: 15px;">*Semua proses pemesanan akan proses melalui
+                                    WA</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <!-- Row1 (Informasi, Contact, Social Media, Marketplace) -->
+            <div class="row">
+                <!-- Informasi -->
+                <div class="col-md-4 col-xs-12">
+                    <h4> Informasi </h4>
+                    <ul class="list-style-none">
+                        <li> <a href="index.html">Home</a> </li>
+                        <li> <a href="shop.html">Shop</a> </li>
+                        <li> <a href="contact.html">Contact</a> </li>
+                        <li> <a href="about.html">About</a> </li>
+                        <li> <a href="https://codefirst.co.id" target="_blank">Codefirst.co.id</a> </li>
+                        <li> <a href="https://blog.codefirst.co.id" target="_blank">Blog Codefirst</a> </li>
+                    </ul>
+                </div>
+                <!-- Contact Information -->
+                <div class="col-md-4 col-xs-12">
+                    <h4> Contact Information </h4>
+                    <!-- Alamat & Telepon -->
+                    <ul class="list-style-none">
+                        <!-- Alamat -->
+                        <li>
+                            <!-- Alamat -->
+                            <p>
+                                <b>Alamat:</b>
+                                <br> Sederetan Ruko English First / EF, Ruko Prima, Jl. Sisingamangaraja No.58,
+                                Panjunan, Lemahwungkuk, Cirebon City, West Java 45112
+                            </p>
+                        </li>
+                        <!-- Telepon -->
+                        <li>
+                            <p>
+                                <b>Telepon</b>
+                                <br> 0877-3606-0665
+                                <br> codefirsthq@gmail.com
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Social Media & Tersedia Marketplace... -->
+                <div class="col-md-4 col-xs-12">
+                    <h4> Social Media </h4>
+                    <!-- IG FB YT TT -->
+                    <ul class="list-style-none contact_social-media">
+                        <li>
+                            <a href="" class=""><i class="fab fa-instagram-square" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="" class=""><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="" class=""><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="" class=""><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                    <br> <!-- br -->
+                    <h4>Kami Tersedia Di Marketplace :</h4>
+                    <!-- Shoope Tokped BL -->
+                    <ul class="list-style-none list-marketplace">
+                        <li>
+                            <img src="Aset/Assets/icon/shopee.png" alt="">
+                        </li>
+                        <li>
+                            <img src="Aset/Assets/icon/tokped.png" alt="">
+                        </li>
+                        <li>
+                            <img src="Aset/Assets/icon/bukalapak.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Row2 (Copyright) -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- hr -->
+                    <div class="footer-bottom d-flex">
+                        <!-- Copyright -->
+                        <div class="copyright">
+                            <span>
+                                <a href="#" class="text-secondary">&copy;Codefirst.co.id</a>
+                                2021 All Rights Reserved
+                            </span>
+                        </div>
+                        <!-- CF Store is part of -->
+                        <span style="margin-left: auto;">
+                            CF Store is part of <a href="#" class="text-secondary">Codefirst.co.id</a>
+                            Technology and Innovation
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var total = document.querySelector('#total_harga');
+        var jumlah = document.querySelector('#number');
+        var nama_produk = document.querySelector('#nama_produk').innerHTML;
+        jumlah.addEventListener('change', function () {
+            var jumlah_harga = total.getAttribute('data-harga');
+
+            if (this.value > 0) {
+                total.innerHTML = 'IDR. ' + (parseInt(jumlah_harga) * parseInt(this.value));
+            }
+        })
+
+        function wa() {
+            window.open("https://wa.me/628813007214?text=Halo%20saya%20ingin%20bertanya%20tentang%20" + nama_produk + '%20Jumlah:%20' + jumlah.value + ' total harga ' + total.innerHTML);
+        }
+
+    </script>
+
+</body>
+
+</html>

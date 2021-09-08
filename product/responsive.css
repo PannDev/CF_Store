@@ -1,0 +1,193 @@
+/* Responsive */
+
+/* Table */
+
+@media (max-width:922px) {
+    .container {
+        max-width: 922px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .nav-left,
+    .nav-right,
+    .nav-center {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: fit-content;
+    }
+
+    .nav-left img {
+        width: 120px;
+    }
+
+    .hero-content--wrapper {
+        max-width: 600px;
+    }
+
+    /* Section Hero */
+    .section_hero {
+        padding-top: 40px;
+    }
+    .nav-right img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+        margin-left: 8px; }
+}
+
+/* Responsive Versi Mobile */
+@media (max-width:768px) {
+    .container {
+        max-width: 768px;
+    }
+    .burger_menu {
+        display: block;
+    }
+
+    .nav-right,
+    .nav-center,
+    .nav-left {
+        text-align: left !important;
+    }
+
+    .nav-right,
+    .nav-center {
+        display: none;
+    }
+
+    .menu_active .nav-right,
+    .menu_active .nav-center {
+        display: block;
+    }
+
+    .menu_active .menu_navigasi {
+        display: block;
+        align-items: unset;
+    }
+
+    .nav-center ul li {
+        display: block;
+        margin: 7px;
+        font-size: 25px;
+    }
+
+    .nav-right img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+        margin-left: 8px; }
+
+        
+.menu_active header {
+    min-height: 100vh;
+    background-color: rgb(245, 245,245);
+}
+
+        .menu_active {
+            overflow: hidden;
+        }
+}
+
+
+
+@media (max-width: 540px) {
+
+    .container {
+        max-width: 540px;
+    }
+
+    header {
+        position: unset;
+    }
+
+    .nav-left,
+    .nav-right,
+    .nav-center {
+        flex-basis: 100%;
+        flex-grow: 1;
+        max-width: 100%;
+        /* text-align: center; */
+        justify-content: center;
+    }
+
+    /* Ready Stock */
+    .hero_content .sub-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    /* Headphone With Strong.. */
+    .hero_content h1 {
+        font-size: 30px;
+    }
+
+    /* Harga */
+    .hero_content h3 {
+        font-size: 25px;
+    }
+
+    /* Button */
+    .btn {
+        padding: 7.5px 15px;
+        font-size: 12px;
+    }
+
+    /* Hero Img */
+    .hero_img {
+        display: none;
+    }
+
+    /* Box Benefit Gratis Ongkir*/
+    .box-benefit {
+        margin-top: 40px;
+    }
+
+    /* Produk Terbaru */
+    .section-title h2 {
+        font-size: 35px;
+    }
+
+    /* Lihat Selengkapnya */
+    .card-action .btn {
+        font-size: 10px;
+        padding: 7.5px;
+    }
+
+    /* Parallax */
+    .mini-about-logo {
+        width: 120px;
+    }
+
+    /* Parallax Sekilas Tentang CF */
+    .mini-about-content h2 {
+        font-size: 35px;
+        margin-top: 30px;
+    }
+
+    /* Parallax Cf Store Adalah */
+    .mini-about-content p {
+        line-height: 25px;
+        font-size: 15px;
+    }
+
+    /* Footer */
+    .footer-bottom span {
+        margin: 0 !important;
+    }
+
+    .footer-bottom {
+        display: flex;
+        font-size: 10px;
+        flex-direction: column;
+    }
+
+    .copyright {
+        margin-bottom: 10px;
+    }
+    .nav-right img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+        margin-left: 8px; }
+}
